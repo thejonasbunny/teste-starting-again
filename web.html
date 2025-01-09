@@ -5,14 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Start</title>
     <style>
+        h1 {
+            text-align: center;
+            text-decoration-line: underline;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            margin: 3%;
+        }
+        p {
+            margin: 3%;
+        }
         mark {
             color: rgba(255,141,119,255); 
             background-color: rgba(49,61,71,255);
-            font-weight: 900;
+            font-weight: 600;
+            padding: 0px 4px;
+        }
+        .jnote {
+            color: black; 
+            background-color: #FFF4A3;
+            padding: 10px;
+        }
+        .jexample {
+            background-color: #3a4044; 
+            padding: 2px;
+            margin: 3%;
+        }
+        .jmain {
+            border: 2px solid powderblue; 
+            margin: 2%;
+        }
+        .tagtag {
+            color: #88ccbb;
+        }
+        .tagname {
+            color: #ff9999;
+        }
+        .tagattribute {
+            color: #a3a5c5;
+        }
+        .tagvalue {
+            color: #28a975;
+        }
+        .tagexample {
+            background-color: rgba(10,28,36,255); 
+            padding: 10px;
         }
     </style>
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif; background-color: rgba(29,42,53,255); 
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: #1d2a35; 
         text-align: left; color: rgba(221,221,210,255);">
 
 
@@ -808,33 +852,92 @@
 
 
 <!-- LINKS -->
-    <div style="border: 2px solid powderblue; margin: 2%;">
+    <div class="jmain">
         <h1 style="text-align: center;">
             LINKS
         </h1>
-        <h3 style="text-align: center;">
+        <h2 style="text-align: center;">
             Hyperlink
-        </h3>
-        <p style="margin: 3%;">
+        </h2>
+        <p>
             HTML links are hyperlinks.
             <br> <br>
             You can click on a link and jump to another document.
             <br> <br>
             When you move the mouse over a link, the mouse arrow will turn into a little hand.
         </p>
-        <div class=".jnote" style="color: black; background-color: #FFF4A3; margin: 3%;">
-            <p>
-                <b>
-                    NOTE:
-                </b>
+        <div>
+            <p class="jnote">
+                <b>NOTE:</b> A link does not have to be a text.
             </p>
         </div>
-        <!-- Example -->
+    <!-- END -->
+        <hr>
+    <!-- START -->
+        <h2>
+            Syntax
+        </h2>
         <p>
-
+            The HTML <mark><'a'></mark> tag defines a hyperlink. It has the following syntax:
         </p>
+        <div class="jexample">
+            <p class="tagexample">
+                <span class="tagtag">
+                <<span class="tagname">a</span>
+                <span class="tagattribute">href</span><span class="tagvalue">="url"</span>></span>link text<span class="tagtag"><<span class="tagname">/a</span>></span>
+            </p>
+        </div>
+        <p>
+            The most important attribute of the <mark><</mark><mark>a</mark><mark>></mark> element is the <mark>href</mark> attribute, which indicates the link's destination.
+        <br><br>
+            The link text is the part that will be visible to the reader.
+        <br><br>
+            Clicking on the link text, will send the reader to the specified URL address.
+        </p>
+        <div class="jexample">
+            <h3>
+                This example shows how to create a link to youtube:
+            </h3>
+            <p class="tagexample">
+                <span class="tagtag">
+                <<span class="tagname">a</span>
+                <span class="tagattribute">href</span><span class="tagvalue">="https://www.youtube.com/"</span>></span>Visit YouTube.<span class="tagtag"><<span class="tagname">/a</span>></span>
+            </p>
+        </div>
+        <p>
+            By default, links will appear as follows in all browsers:
+            <br> <br>
+            <a href="https://www.youtube.com/" style="text-decoration: underline; color: blue; background-color: white;">1. An unvisited link is underlined and blue</a>
+            <br> <br>
+            <a href="https://www.youtube.com/" style="text-decoration: underline; color: #551A8B; background-color: white;">2. A visited link is underlined and purple</a>
+            <br> <br>
+            <a href="https://www.youtube.com/" style="text-decoration: underline; color: red; background-color: white;">3. An active link is underlined and red</a>
+            <br> <br>
+            <a href="https://www.youtube.com/" style="text-decoration-line: overline; color: rgb(217, 255, 0); background-color: rgb(0, 0, 0);">TIP: Links can be styled with CSS of course</a>
+        </p>
+    <!-- END -->
+        <hr>
+    <!-- START -->
+        <div>
+            <h2>
+                Target Attribute
+            </h2>
+        </div>
+
+
     </div>
 
+
+
+<!-- 
+<div class="jexample">
+    <p class="tagexample">
+        <span class="tagtag">
+        <<span class="tagname">a</span>
+        <span class="tagattribute">href</span><span class="tagvalue">="url"</span>></span>link text<span class="tagtag"><<span class="tagname">/a</span>></span>
+    </p>
+</div>
+-->
 
 <b style="color: rgba(255,141,119,255); background-color: rgba(49,61,71,255);"></b>
 <!-- <b style="color: rgba(255,141,119,255); background-color: rgba(49,61,71,255);"></b> -->
