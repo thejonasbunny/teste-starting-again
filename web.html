@@ -18,11 +18,38 @@
         p {
             margin: 3%;
         }
+        a:link{
+            background-color: white;
+        }
+        a.ex1:link{
+            color: rgb(0, 255, 0);
+        }
+        a.ex1:hover{
+            color: rgb(247, 252, 0);
+        }
+        a.ex1:active{
+            color: rgb(255, 0, 255);
+        }
+        a.ex1:visited{
+            color: rgb(255, 0, 0);
+        }
+        a.ex2:link, a.ex2:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+        a.ex2:hover, a.ex2:active {
+        background-color: red;
+        }
         mark {
             color: rgba(255,141,119,255); 
             background-color: rgba(49,61,71,255);
             font-weight: 600;
             padding: 0px 4px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
         .center {
             padding: inherit;
@@ -819,7 +846,7 @@
             <br> <br>
             Here is what the <b>"styles.css"</b> file looks like:
             <br> <br>
-            <img src="/CSS/ExCssFile.png" alt="ExCssFile" height="181">
+            <img src="/CSS/ExCssFile.png" alt="ExCssFile" height="168">
         </p>
         <p>
             <b>Tip:</b> With an external style sheet, you can change the look of an entire web site, by changing one file!
@@ -973,7 +1000,7 @@
                 <br> <br>
                 A local link (a link to a page within the same website) is specified with a <b>relative URL</b> (without the "https://www" part):
                 <br> <br> 
-            <img src="/Links Hyperlink/ExAbsoluteUrlsVsRelativeUrls.png" alt="ExAbsoluteUrlsVsRelativeUrls" height="155" width="" class="">
+            <img src="/Links Hyperlink/ExAbsoluteUrlsVsRelativeUrls.png" alt="ExAbsoluteUrlsVsRelativeUrls" height="145" width="" class="">
             </p>
         </div>
         <hr>
@@ -985,11 +1012,12 @@
                 To use an image as a link, just put the <mark><<!---->img></mark> tag inside the <mark><<!---->a></mark> tag:
                 <br><br>
                 <a href="https://www.youtube.com/">
-                    <img src="/Links Hyperlink/ExYoutubeLogo.png" alt="" height="35">
+                    <img src="/Links Hyperlink/ExYoutubeLogo.png" alt="" height="30">
                 </a>
                 <br> <br> 
                 Example:
                 <br>
+                <img src="/Links Hyperlink/ExImgLink.png" alt="" height="74">
                 
             </p>
         </div>
@@ -999,7 +1027,67 @@
                 Link to an Email Address
             </h2>
             <p>
-
+                Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to crete a link that opens the user's email program (to let them send a new email):
+                <br> <br> Example: <br>
+                <img src="/Links Hyperlink/ExMailTo.png" alt="" height="45.5"> <br> <br> 
+                <a href="mailto:nameless.jonas@gmail.com" target="_blank" style="background-color: white;">Send e-mail</a>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                Button as a Link
+            </h2>
+            <p>
+                To use an HTML button as a link, you have to add some JavaScript code. 
+                <br> <br>
+                JavaScript allows you to specify what happens at certain events, such as a click of a button:
+                <br> <br>
+                <img src="/Links Hyperlink/ExButtonLink.png" alt="" height="56">
+            </p>
+            <button onclick="document.location='main.html'" style="margin-left: 36%;">
+                HTML Tutorial
+            </button>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                Link Titles
+            </h2>
+            <p>
+                The <mark>title</mark> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+                <br> <br>
+                Example: <br>
+                <img src="/Links Hyperlink/ExLinkTitle.png" alt="" height="60"> <br> <br>
+                <a href="https://www.youtube.com/" style="text-align: center; background-color: white;" title="Mickey start">Mouse over</a>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                Links Colors
+            </h2>
+            <p>
+                You can change the link state colors, by using CSS: <br>
+                <br>
+                Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined: <br>
+                <br>
+                <img src="/Links Hyperlink/ExLinkColors.png" alt="" height="425"> <br>
+                <br>
+                <a href="https://www.youtube.com/" class="ex1">Teste</a>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2>
+                Link Buttons
+            </h2>
+            <p>
+                A link can also be styled as a button, by using CSS:
+                <br> <br>
+                <img src="/Links Hyperlink/ExButtonStyle.png" alt="" height="240"> <br>
+                <br>
+                <a href="https://www.youtube.com/" class="ex2">This is a link</a>
             </p>
         </div>
         
