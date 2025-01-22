@@ -1117,8 +1117,8 @@
     </div>
 <!-- END -->
     <div class="jmain">
-<!-- START -->
     </div>
+<!-- START -->
     <div class="jmain">
         <h1>
             Images
@@ -1152,14 +1152,89 @@
                 However, I suggest using the <mark>style</mark> attribute. It prevents styles sheets from changing the size of images.
             </p>
             <!-- END -->
-             <hr>
+            <hr>
              <!-- START -->
-              <h2>Animated Images</h2>
+            <h2>Animated Images</h2>
+            <p>
+                HTML allows animated GIFs:
+                <br> <br>
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHNpcmx0b2tjMzhseXhldGI0aG42YWs3MXc4bXg2ZXZ6bDE3eGhueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eSwGh3YK54JKU/giphy.gif" alt="" style="width: 321px;">
+            </p>
+            <!-- END -->
+            <hr>
+            <!-- START -->
+            <h2>
+                Image Maps
+            </h2>
+            <p>
+                The HTML <mark>map</mark> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <mark>aree</mark> tags.
+                <br> <br>
+                Try to click on the computer, phone, or the cup of coffee in the image bellow: <br> <br>
+
+                <img src="https://www.w3schools.com/html/workplace.jpg" alt="" usemap="#workmap" style="width: 321px;">
+
+            <map name="workmap">
+                <area shape="rect" coords="27.29,35.31,216.68,280.88" alt="Computer" href="https://pt.wikipedia.org/wiki/Computador">
+                <area shape="rect" coords="232.72,138.03,267.23,200.62" alt="Phone" href="https://pt.wikipedia.org/wiki/Telefone_celular">
+                <area shape="circle" coords="270.44,240.75,35.31" alt="Coffee" href="https://pt.wikipedia.org/wiki/Caf%C3%A9">
+            </map>
+            <br> <br>
+            <span style="font-size: larger;">EXAMPLE:</span>
+            <br>
+            <br>
+            <img src="/Images/ExCodeImageMap.png" alt="" style="width: 321px;">
+                <br>
+                <br>
+            The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+                <br>
+                <br>
+            To create an image map you need an image, and some HTML code that describes the clickable areas.
+                <br>
+                <br>
+            The image inserted using <mark>img</mark> tag. The only difference from other images is taht you must add <mark>usemap</mark> attribute:
+                <br>
+                <br>
+            <img src="/Images/ExCodeUsemapAttribute.png" alt="" style="width: 321px;">
+                <br>
+                <br>
+            The <mark>usemap</mark> value starts with a hash tag <mark>#</mark> followed by the name of the image map, and is used to create a relationship between the image and the image map:
+                <br>
+            <mark>usemap="#workmap"</mark>
+            </p>
+                <!-- END -->
+            <hr> 
+                <!-- START -->
+            <h2>
+                The Areas
+            </h2>
                 <p>
-                    HTML allows animated GIFs:
-                    <br> <br>
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHNpcmx0b2tjMzhseXhldGI0aG42YWs3MXc4bXg2ZXZ6bDE3eGhueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eSwGh3YK54JKU/giphy.gif" alt="" style="width: 322px;">
+                    A clickable area is defined using an <mark>area</mark> element.
                 </p>
+            <!-- END -->
+            <hr>
+            <!-- START -->
+            <h2>Shape</h2>
+                <p>
+                    You must define the shape of the clickable area, and you can choose one of these values:
+                </p>
+                    <ul>
+                        <mark>rect</mark> - defines a rectangular region <br>
+                        <mark>circle</mark> - defines a circular region <br>
+                        <mark>poly</mark> - defines a polygonal region <br>
+                        <mark>default</mark> - defines the entire region <br>
+                    </ul>
+                <p>
+                    You must also define some coordinates to be able to place the clickable area onto the image.
+                </p>
+            
+
+    </div>
+<!-- END -->
+    <div class="jmain">
+    </div>
+ <!-- START -->
+    <div class="jmain">
+        <h1></h1>
     </div>
 
 
