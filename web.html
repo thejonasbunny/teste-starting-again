@@ -1202,7 +1202,6 @@
             <mark>usemap="#workmap"</mark>
             </p>
                 <!-- END -->
-            <hr> 
                 <!-- START -->
             <h2>
                 The Areas
@@ -1211,7 +1210,6 @@
                     A clickable area is defined using an <mark>area</mark> element.
                 </p>
             <!-- END -->
-            <hr>
             <!-- START -->
             <h2>Shape</h2>
                 <p>
@@ -1226,6 +1224,106 @@
                 <p>
                     You must also define some coordinates to be able to place the clickable area onto the image.
                 </p>
+            <!-- END -->
+                <hr>
+            <!-- START -->
+            <h2>Background Images</h2>
+                <p>
+                    To add a background image on an HTML element, use the HTML <mark>style</mark> attribute and the CSS <mark>background-image</mark> property
+                    <br>
+                    <br>
+                    If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element
+                    </p>
+                <pre style="background-image: url(/Images/ExImageRepeat.png);"><i style="color: rgb(255, 0, 0); font-weight: bolder;">
+                    Just <br> 
+                    like <br> 
+                    And <br>
+                    this <br>
+                    it <br>
+                    goes <br>
+                    as <br>
+                    long <br>
+                    as <br> 
+                    I <br> 
+                    want</i> <br>
+                    </pre>
+            <hr>
+            <h2>Background Repeat</h2>
+                <p>
+                    To avoid the background image from repeating itself, set the <mark>background-repeat</mark> property to <mark>no-repeat</mark>
+                    </p>
+                    <pre style="background-image: url(/Images/ExImageRepeat.png); background-repeat: no-repeat;"><i style="color: rgb(255, 0, 0); font-weight: bolder;">
+                    Just <br> 
+                    like <br> 
+                    And <br>
+                    this <br>
+                    it <br>
+                    goes <br>
+                    as <br>
+                    long <br>
+                    as <br> 
+                    I <br> 
+                    want</i> <br>
+                    </pre>
+            <hr>
+            <h2>Background Cover</h2>
+                <p>
+                    If you want the background image to cover the entire element, you can set the <mark>background-size</mark> property to <mark>cover</mark>.
+                    </p>
+                <pre style="background-image: url(/Images/ExImageRepeat.png); background-repeat: no-repeat; background-size: cover;"><i style="color: rgb(255, 0, 0); font-weight: bolder;">
+                    Just <br> 
+                    like <br> 
+                    And <br>
+                    this <br>
+                    it <br>
+                    goes <br>
+                    as <br>
+                    long <br>
+                    as <br> 
+                    I <br> 
+                    want</i> <br>
+                    </pre>
+                <p>
+                    Also, to make sure the entire element is always covered, set the <mark>background-attachment</mark> property to <mark>fixed</mark>
+                    <br> <br>
+                    This way, the background image will cover the entire element with no scretching (the image will keep its original proportions):
+                    </p>
+                <pre style="background-image: url(/Images/ExImageRepeat.png); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;"><i style="color: rgb(255, 0, 0); font-weight: bolder;">
+                    Just <br> 
+                    like <br> 
+                    And <br>
+                    this <br>
+                    it <br>
+                    goes <br>
+                    as <br>
+                    long <br>
+                    as <br> 
+                    I <br> 
+                    want</i> <br>
+                    </pre>
+            <hr>
+            <h2>Background Stretch</h2>
+                <p>
+                    If you want the background image to stretch to fit the entire element, you can set the <mark>background-size</mark> property to <mark>100% 100%</mark>:
+                    </p>
+                <pre style="background-image: url(/Images/ExImageRepeat.png); background-repeat: no-repeat; background-size: cover; background-size: 100% 100%;"><i style="color: rgb(255, 0, 0); font-weight: bolder;">
+                    Just <br> 
+                    like <br> 
+                    And <br>
+                    this <br>
+                    it <br>
+                    goes <br>
+                    as <br>
+                    long <br>
+                    as <br> 
+                    I <br> 
+                    want</i> <br>
+                    </pre>
+            <hr>
+            <h2>Picture Element</h2>
+                <p>
+                    a
+                    </p>
             
 
     </div>
