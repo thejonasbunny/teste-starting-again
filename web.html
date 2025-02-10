@@ -20,10 +20,11 @@
             margin: 3%;
         }
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid white;
             border-collapse: collapse;
-            border-color: white;
-            margin: 3%
+            margin: 3%;
+            width: 94%;
+            border-radius: 10px
         }
         a:link{
             background-color: white;
@@ -1615,6 +1616,57 @@
                 <img src="/Tables/ExTableBorder.png" alt="" style="width: 321px;">
                 </p>
 
+                <hr>
+
+            <h2>Collapsed Table Borders</h2>
+                <p>
+                To avoid having double borders like in the example above, set the CSS <mark>border-collapse</mark> property to <mark>collapse</mark>. <br> <br>
+
+                This will make the borders collapse into a single border: <br> <br>
+
+                <img src="/Tables/ExTableBorderCollapse.png" alt="" style="width: 321px;">
+                </p>
+
+                <hr>
+
+            <h2>Style Table Borders</h2>
+                <p>
+                    If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border: <br> <br>
+                
+                <img src="/Tables/ExTableBorderInvisible1.png" alt="" style="width: 321px; margin: 1%;">
+
+                </p>
+
+                <hr>
+
+            <h2>Round Table Borders</h2>
+                <p>
+
+                    With the <mark>border-radius</mark> property, the borders get rounded corners: <br> <br>
+
+                    <img src="/Tables/ExTableBorderRound.png" alt="" style="width: 321px;">
+                </p>
+                <h3>Example:</h3>
+                    <p>
+                        <img src="/Tables/ExTableBorderRoundCode.png" alt="" style="width: 321px;">
+                    </p>
+                    <br>
+                    <p>
+                        Skip the border around the table by leaving out <mark>table</mark> from the css selector: <br> <br>
+
+                        <img src="/Tables/ExTableBorderRound2.png" alt="" style="width: 321px;">
+                    </p>
+                <hr>
+            <h2>Dotted Table Borders</h2>
+                <p>
+                    With the <mark>border-style</mark> property, you can set the appearance of the border. <br> <br>
+
+                    <img src="/Tables/ExTableBorderDotted1.png" alt="" style="width: 321px;"> <br> <br>
+
+                    The following values are allowed:
+
+                    <img src="/Tables/ExTableBorderStyles.png" alt="" style="width: 321px;">
+                </p>
             
                 
     </div>
