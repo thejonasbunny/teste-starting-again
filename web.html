@@ -19,6 +19,12 @@
         p {
             margin: 3%;
         }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-color: white;
+            margin: 3%
+        }
         a:link{
             background-color: white;
         }
@@ -48,7 +54,6 @@
         mark {
             color: rgba(255,141,119,255); 
             background-color: rgba(49,61,71,255);
-            font-weight: 600;
             padding: 0px 4px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -1471,8 +1476,147 @@
     <div class="jmain">
         <h1>HTML Tables</h1>
                 <p>
-                    HTML tabl
+                    HTML tables allow web developers to arrange data info rows and columns.
                     </p>
+
+                <h3>Example:</h3>
+                <table>
+
+                    <tr>
+                        <th>Company</th>
+                        <th>Contract</th>
+                        <th>Country</th>
+                    </tr>
+
+                    <tr>
+                        <td>Alfreds Futterkistet</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+
+                    <tr>
+                        <td>Centro Comercial Moctezuma</td>
+                        <td>Fransisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+
+                </table>
+
+                <p>
+                    
+                <img src="/Tables/ExTableCellSimple.png" alt="" style="width: 321px;">
+
+                </p>
+                <ul>
+                    <mark>tr</mark> stands for table row. <br>
+                    <mark>th</mark> stands for table heading. <br>
+                    <mark>td</mark> stands for table data. <br>
+                </ul>
+
+            <h2>Table Cells</h2>
+
+                <p>
+                    
+                    Each table cell is defined by a <mark><<!---->td></mark> and a <mark><<!---->/td></mark> tag.
+
+                    <br> <br>
+
+                    <span style="font-size: larger;">Example:</span> <br>
+
+                    <img src="/Tables/ExTableData.png" alt="" style="width: 321px;">
+
+                </p>
+                <p class="jnote">
+                    Note: a table cell can obtain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+                </p>
+
+                <hr>
+
+                <h2>Table Rows</h2>
+
+                <p>
+                    Each table row starts with a <mark><<!---->tr></mark> and ends with a <mark><<!---->/tr></mark> tag.
+                </p>
+
+                <h3>Example:</h3>
+                <p>
+                <img src="/Tables/ExTableRow.png" alt="" style="width: 321px;">
+                </p>
+                <table>
+                    <tr>
+                      <td>Emil</td>
+                      <td>Tobias</td>
+                      <td>Linus</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>14</td>
+                      <td>10</td>
+                    </tr>
+                </table>
+                
+                <p>
+                    You can have as many rows as you like in a table; just make sure that number of cells are the same in each row.
+                </p>
+
+                <p class="jnote">
+                    There are times when a row can have less or more cells than another. You will learn about that in a later chapter.
+                </p>
+
+                <hr>
+
+                <h2>Table Headers</h2>
+                    <p>
+                        Sometimes you want your cells to be table headers cells. In those cases use the <mark><<!---->th></mark> tag instead of the <mark><<!---->td></mark> tag:
+                    </p>
+
+                    <h3>Example:</h3>
+
+                    <p>
+                    <img src="/Tables/ExTableHeading.png" alt="" style="width: 321px;">
+                    </p>
+
+                    <table>
+                        <tr>
+                          <th>Person 1</th>
+                          <th>Person 2</th>
+                          <th>Person 3</th>
+                        </tr>
+                        <tr>
+                          <td>Emil</td>
+                          <td>Tobias</td>
+                          <td>Linus</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>14</td>
+                          <td>10</td>
+                        </tr>
+                    </table>
+                
+                    <p>
+                        By default, the text in <mark><<!---->th></mark> elements are bold and centered, but you can change that with CSS.
+                    </p>
+        
+        <hr>
+
+        <h1>HTML Table Borders</h1>
+            <p>
+                HTML tables can have borders of different styles and shapes.
+
+                <br> <br>
+
+                To add a border, use the css <mark>border</mark> property on <mark>table</mark>, <mark>th</mark>, and <mark>td</mark> elements:
+            </p>
+
+            <h3>Example:</h3>
+
+                <p>
+                <img src="/Tables/ExTableBorder.png" alt="" style="width: 321px;">
+                </p>
+
+            
+                
     </div>
 
 
